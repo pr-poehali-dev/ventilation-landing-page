@@ -26,193 +26,237 @@ const Index = () => {
 
   const services = [
     {
-      icon: 'Wind',
-      title: 'Приточная вентиляция',
-      description: 'Обеспечивает постоянный приток свежего воздуха в помещение с возможностью фильтрации и подогрева',
-      features: ['Фильтрация воздуха', 'Подогрев зимой', 'Регулировка потока']
+      icon: 'Home',
+      title: 'Для квартир и домов',
+      description: 'Канальные системы для жилых помещений площадью от 50 до 300 м². Скрытая установка, тихая работа.',
+      features: ['Скрытый монтаж', 'Бесшумная работа', 'Зональный контроль']
     },
     {
-      icon: 'Fan',
-      title: 'Вытяжная вентиляция',
-      description: 'Эффективно удаляет загрязненный воздух, влагу и неприятные запахи из помещения',
-      features: ['Удаление запахов', 'Контроль влажности', 'Энергоэффективность']
+      icon: 'Building',
+      title: 'Для офисов',
+      description: 'Профессиональные решения для бизнес-центров и офисных пространств любой площади.',
+      features: ['Центральное управление', 'Энергоэффективность', 'Быстрый монтаж']
     },
     {
-      icon: 'Cpu',
-      title: 'Приточно-вытяжная',
-      description: 'Современная система с рекуперацией тепла - одновременная подача и удаление воздуха',
-      features: ['Рекуперация тепла', 'Экономия до 90%', 'Полный воздухообмен']
+      icon: 'ShoppingBag',
+      title: 'Для торговых площадей',
+      description: 'Мощные системы для магазинов, ресторанов и коммерческих объектов с высокой проходимостью.',
+      features: ['Высокая мощность', 'Многозональность', 'Надежность 24/7']
     }
   ];
 
   const benefits = [
-    { icon: 'Award', title: 'Опыт 15+ лет', description: 'Более 500 успешных проектов' },
-    { icon: 'Shield', title: 'Гарантия 5 лет', description: 'На все виды работ и оборудование' },
-    { icon: 'Clock', title: 'Монтаж 2-5 дней', description: 'Быстрая установка без простоев' },
-    { icon: 'Wrench', title: 'Сервис 24/7', description: 'Техподдержка и обслуживание' }
+    { 
+      icon: 'Eye', 
+      title: 'Незаметность', 
+      description: 'Внутренний блок скрыт за подвесным потолком' 
+    },
+    { 
+      icon: 'Volume2', 
+      title: 'Тихая работа', 
+      description: 'Уровень шума от 22 дБ - тише шепота' 
+    },
+    { 
+      icon: 'Snowflake', 
+      title: 'Равномерное охлаждение', 
+      description: 'Климат-контроль во всех помещениях' 
+    },
+    { 
+      icon: 'Zap', 
+      title: 'Экономия энергии', 
+      description: 'Инверторные технологии класса A++' 
+    }
   ];
 
   const steps = [
-    { number: '01', title: 'Заявка', description: 'Оставьте заявку на сайте или позвоните нам' },
-    { number: '02', title: 'Выезд инженера', description: 'Бесплатный осмотр объекта и замеры' },
-    { number: '03', title: 'Проект', description: 'Разработка проекта и расчет стоимости' },
-    { number: '04', title: 'Монтаж', description: 'Профессиональная установка системы' },
-    { number: '05', title: 'Запуск', description: 'Наладка, тестирование и обучение' }
+    { number: '01', title: 'Консультация', description: 'Обсудим ваши задачи и подберём решение' },
+    { number: '02', title: 'Замер объекта', description: 'Выезд специалиста для точных расчетов' },
+    { number: '03', title: 'Проектирование', description: 'Разработка схемы размещения оборудования' },
+    { number: '04', title: 'Монтаж', description: 'Профессиональная установка за 3-7 дней' },
+    { number: '05', title: 'Запуск и настройка', description: 'Тестирование и обучение управлению' }
   ];
 
-  const portfolio = [
-    { title: 'Офисный центр', area: '450 м²', type: 'Приточно-вытяжная', location: 'Москва' },
-    { title: 'Торговый центр', area: '1200 м²', type: 'Вытяжная', location: 'Санкт-Петербург' },
-    { title: 'Производство', area: '800 м²', type: 'Приточная', location: 'Казань' },
-    { title: 'Ресторан', area: '250 м²', type: 'Приточно-вытяжная', location: 'Москва' }
+  const brands = [
+    { name: 'Daikin', description: 'Японское качество' },
+    { name: 'Mitsubishi', description: 'Премиум класс' },
+    { name: 'LG', description: 'Инновации' },
+    { name: 'Gree', description: 'Оптимальная цена' }
   ];
 
   const prices = [
     {
-      title: 'Стандарт',
-      price: 'от 85 000 ₽',
+      title: 'Базовый',
+      price: 'от 120 000 ₽',
       features: [
-        'Приточная вентиляция',
-        'Площадь до 100 м²',
-        'Базовая комплектация',
-        'Монтаж и настройка',
-        'Гарантия 3 года'
+        'Площадь до 70 м²',
+        'Кондиционер Gree',
+        'Стандартный монтаж',
+        'Один внутренний блок',
+        'Гарантия 2 года'
       ]
     },
     {
-      title: 'Оптимал',
-      price: 'от 150 000 ₽',
+      title: 'Оптимальный',
+      price: 'от 180 000 ₽',
       features: [
-        'Приточно-вытяжная',
-        'Площадь до 200 м²',
-        'Расширенная комплектация',
-        'Рекуперация тепла',
-        'Гарантия 5 лет'
+        'Площадь до 120 м²',
+        'Кондиционер LG/Daikin',
+        'Полный монтаж',
+        'До 3-х зон охлаждения',
+        'Гарантия 3 года'
       ],
       popular: true
     },
     {
       title: 'Премиум',
-      price: 'от 300 000 ₽',
+      price: 'от 350 000 ₽',
       features: [
-        'Умная система управления',
-        'Площадь от 200 м²',
+        'Площадь от 120 м²',
+        'Mitsubishi/Daikin VRV',
         'Премиум оборудование',
-        'Автоматизация',
-        'Гарантия 7 лет'
+        'Многозональная система',
+        'Гарантия 5 лет'
       ]
     }
   ];
 
   const reviews = [
     {
-      name: 'Алексей Морозов',
-      position: 'Владелец ресторана',
-      text: 'Установили систему вентиляции на кухне и в залах. Работают быстро, качественно. Теперь никаких запахов!',
+      name: 'Игорь Петров',
+      position: 'Владелец квартиры',
+      text: 'Установили канальник в трёшке. Теперь во всех комнатах одинаковая температура, и ничего не торчит на стенах. Очень доволен!',
       rating: 5
     },
     {
-      name: 'Елена Соколова',
-      position: 'Управляющая офисом',
-      text: 'Отличная команда профессионалов. Сделали проект, установили, настроили. В офисе стало комфортно работать.',
+      name: 'Марина Сидорова',
+      position: 'Управляющая салоном',
+      text: 'В салоне красоты важна атмосфера. Канальная система работает бесшумно, клиенты даже не замечают. Отличное решение!',
       rating: 5
     },
     {
-      name: 'Дмитрий Волков',
-      position: 'Директор производства',
-      text: 'Большой объект, сложная система. Справились на отлично. Рекомендую!',
+      name: 'Андрей Волков',
+      position: 'Директор офиса',
+      text: 'Охлаждает весь офис 150 м² равномерно. Энергопотребление ниже, чем у сплит-систем. Рекомендую для бизнеса!',
       rating: 5
+    }
+  ];
+
+  const features = [
+    {
+      title: 'Скрытая установка',
+      description: 'Внутренний блок монтируется за подвесным потолком - снаружи видны только декоративные решётки',
+      icon: 'EyeOff'
+    },
+    {
+      title: 'Зональное управление',
+      description: 'Независимая регулировка температуры в разных помещениях через единую систему',
+      icon: 'Layers'
+    },
+    {
+      title: 'Фильтрация воздуха',
+      description: 'Многоступенчатая очистка от пыли, аллергенов и бактерий для здорового микроклимата',
+      icon: 'Filter'
+    },
+    {
+      title: 'Умное управление',
+      description: 'Возможность интеграции с системой умного дома и дистанционное управление со смартфона',
+      icon: 'Smartphone'
     }
   ];
 
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Wind" className="text-primary" size={32} />
-            <span className="text-xl font-bold">VentPro</span>
+            <Icon name="AirVent" className="text-primary" size={32} />
+            <span className="text-xl font-bold">CoolAir Pro</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
-            <a href="#portfolio" className="hover:text-primary transition-colors">Портфолио</a>
+            <a href="#features" className="hover:text-primary transition-colors">Преимущества</a>
             <a href="#prices" className="hover:text-primary transition-colors">Цены</a>
             <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
             <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
           </div>
           <Button asChild>
-            <a href="#contact">Заказать звонок</a>
+            <a href="#contact">Заказать расчет</a>
           </Button>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-secondary via-secondary/95 to-primary/20 text-white">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-white to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <Badge className="mb-4 bg-primary">Профессиональный монтаж</Badge>
+              <Badge className="mb-4 bg-primary">Профессиональная установка</Badge>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Монтаж систем вентиляции под ключ
+                Канальные кондиционеры под ключ
               </h1>
-              <p className="text-xl mb-8 text-white/90">
-                Проектирование, установка и обслуживание вентиляционных систем любой сложности. Гарантия 5 лет.
+              <p className="text-xl mb-8 text-muted-foreground">
+                Невидимое охлаждение всего дома или офиса. Скрытый монтаж, тихая работа, равномерный климат в каждой комнате.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-white text-secondary hover:bg-white/90" asChild>
-                  <a href="#contact">Получить расчет</a>
+                <Button size="lg" asChild>
+                  <a href="#contact">Бесплатный расчет</a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                  Наши работы
+                <Button size="lg" variant="outline">
+                  Примеры работ
                 </Button>
               </div>
               <div className="grid grid-cols-3 gap-6 mt-12">
                 <div>
-                  <div className="text-3xl font-bold">15+</div>
-                  <div className="text-white/70">лет опыта</div>
+                  <div className="text-3xl font-bold text-primary">12+</div>
+                  <div className="text-muted-foreground">лет опыта</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">500+</div>
-                  <div className="text-white/70">проектов</div>
+                  <div className="text-3xl font-bold text-primary">350+</div>
+                  <div className="text-muted-foreground">установок</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">98%</div>
-                  <div className="text-white/70">довольных клиентов</div>
+                  <div className="text-3xl font-bold text-primary">99%</div>
+                  <div className="text-muted-foreground">довольных клиентов</div>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold mb-6">Быстрый расчет стоимости</h3>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <Input
-                    placeholder="Ваше имя"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-white/90 text-secondary"
-                    required
-                  />
-                  <Input
-                    type="tel"
-                    placeholder="Телефон"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="bg-white/90 text-secondary"
-                    required
-                  />
-                  <Textarea
-                    placeholder="Опишите ваш объект"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-white/90 text-secondary"
-                    rows={3}
-                  />
-                  <Button type="submit" className="w-full bg-primary hover:bg-primary/90" size="lg">
-                    Получить расчет
-                  </Button>
-                </form>
-              </div>
+              <Card className="shadow-2xl">
+                <CardHeader className="bg-gradient-to-br from-primary to-secondary text-white">
+                  <CardTitle className="text-2xl">Узнайте стоимость за 2 минуты</CardTitle>
+                  <CardDescription className="text-white/90">Заполните форму - мы рассчитаем точную цену</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <Input
+                      placeholder="Ваше имя"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      required
+                    />
+                    <Input
+                      type="tel"
+                      placeholder="Телефон"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      required
+                    />
+                    <Textarea
+                      placeholder="Площадь помещения и тип объекта"
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      rows={3}
+                    />
+                    <Button type="submit" className="w-full" size="lg">
+                      Получить расчет
+                    </Button>
+                    <p className="text-xs text-center text-muted-foreground">
+                      Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                    </p>
+                  </form>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
@@ -223,14 +267,14 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4">Наши услуги</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Типы вентиляционных систем</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Для каких объектов подходит</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Предлагаем полный спектр решений для обеспечения идеального микроклимата
+              Канальные кондиционеры - универсальное решение для любых помещений
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <CardHeader>
                   <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Icon name={service.icon} className="text-primary" size={32} />
@@ -242,7 +286,7 @@ const Index = () => {
                   <ul className="space-y-3">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <Icon name="CheckCircle2" className="text-primary" size={20} />
+                        <Icon name="Check" className="text-primary" size={20} />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -254,18 +298,45 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 bg-muted/30">
+      {/* Features Section */}
+      <section id="features" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4">Преимущества</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Почему выбирают нас</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Почему канальные системы</h2>
+            <p className="text-xl text-muted-foreground">Главные преимущества перед обычными кондиционерами</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-2 hover:border-primary transition-colors">
+                <CardHeader>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Icon name={feature.icon} className="text-primary" size={24} />
+                    </div>
+                    <div>
+                      <CardTitle className="text-xl mb-2">{feature.title}</CardTitle>
+                      <CardDescription className="text-base">{feature.description}</CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Grid */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Что вы получаете</h2>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name={benefit.icon} className="text-primary" size={36} />
+                <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name={benefit.icon} className="text-white" size={36} />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
                 <p className="text-muted-foreground">{benefit.description}</p>
@@ -275,31 +346,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Portfolio Section */}
-      <section id="portfolio" className="py-20">
+      {/* Brands Section */}
+      <section className="py-20 bg-secondary text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4">Портфолио</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши работы</h2>
-            <p className="text-xl text-muted-foreground">Реализованные проекты различной сложности</p>
+            <Badge className="mb-4 bg-primary">Производители</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Работаем с лучшими брендами</h2>
+            <p className="text-xl text-white/80">Официальные партнеры мировых производителей</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {portfolio.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <CardDescription>{project.location}</CardDescription>
+          <div className="grid md:grid-cols-4 gap-8">
+            {brands.map((brand, index) => (
+              <Card key={index} className="bg-white/10 border-white/20 text-white hover:bg-white/20 transition-colors">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-2xl">{brand.name}</CardTitle>
+                  <CardDescription className="text-white/70">{brand.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <Icon name="Maximize" size={16} className="text-primary" />
-                    <span>{project.area}</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <Icon name="Settings" size={16} className="text-primary" />
-                    <span>{project.type}</span>
-                  </div>
-                </CardContent>
               </Card>
             ))}
           </div>
@@ -307,18 +368,24 @@ const Index = () => {
       </section>
 
       {/* Steps Section */}
-      <section className="py-20 bg-secondary text-white">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-primary">Этапы работы</Badge>
+            <Badge className="mb-4">Этапы работы</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Как мы работаем</h2>
+            <p className="text-xl text-muted-foreground">От заявки до запуска системы</p>
           </div>
           <div className="grid md:grid-cols-5 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="text-6xl font-bold text-primary/30 mb-4">{step.number}</div>
+              <div key={index} className="text-center relative">
+                <div className="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg">
+                  {step.number}
+                </div>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                <p className="text-white/70">{step.description}</p>
+                <p className="text-muted-foreground text-sm">{step.description}</p>
+                {index < steps.length - 1 && (
+                  <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-0.5 bg-primary/30" />
+                )}
               </div>
             ))}
           </div>
@@ -326,36 +393,38 @@ const Index = () => {
       </section>
 
       {/* Prices Section */}
-      <section id="prices" className="py-20">
+      <section id="prices" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4">Цены</Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Тарифы и стоимость</h2>
-            <p className="text-xl text-muted-foreground">Прозрачные цены без скрытых платежей</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Стоимость установки</h2>
+            <p className="text-xl text-muted-foreground">Фиксированные цены без скрытых доплат</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {prices.map((price, index) => (
-              <Card key={index} className={`relative ${price.popular ? 'border-primary border-2 shadow-xl' : ''}`}>
+              <Card key={index} className={`relative ${price.popular ? 'border-primary border-2 shadow-2xl scale-105' : ''}`}>
                 {price.popular && (
                   <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">
-                    Популярный
+                    Хит продаж
                   </Badge>
                 )}
-                <CardHeader>
+                <CardHeader className={price.popular ? 'bg-gradient-to-br from-primary to-secondary text-white' : ''}>
                   <CardTitle className="text-2xl">{price.title}</CardTitle>
-                  <div className="text-3xl font-bold text-primary mt-4">{price.price}</div>
+                  <div className={`text-4xl font-bold mt-4 ${price.popular ? 'text-white' : 'text-primary'}`}>
+                    {price.price}
+                  </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-6">
                   <ul className="space-y-3 mb-6">
                     {price.features.map((feature, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <Icon name="Check" className="text-primary" size={20} />
+                      <li key={i} className="flex items-start gap-2">
+                        <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-0.5" size={20} />
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full" variant={price.popular ? "default" : "outline"}>
-                    Выбрать тариф
+                  <Button className="w-full" variant={price.popular ? "default" : "outline"} size="lg">
+                    Выбрать пакет
                   </Button>
                 </CardContent>
               </Card>
@@ -365,15 +434,16 @@ const Index = () => {
       </section>
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 bg-muted/30">
+      <section id="reviews" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="mb-4">Отзывы</Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Что говорят наши клиенты</h2>
+            <p className="text-xl text-muted-foreground">Реальные отзывы от реальных людей</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
-              <Card key={index}>
+              <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex gap-1 mb-4">
                     {[...Array(review.rating)].map((_, i) => (
@@ -393,57 +463,58 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contact" className="py-20 bg-gradient-to-br from-primary to-secondary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <Badge className="mb-4">Контакты</Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Свяжитесь с нами</h2>
-              <p className="text-xl text-muted-foreground">Ответим на все вопросы и рассчитаем стоимость проекта</p>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Готовы начать?</h2>
+              <p className="text-xl text-white/90">Оставьте заявку - наш специалист свяжется с вами в течение 10 минут</p>
             </div>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name="Phone" className="text-primary" size={24} />
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Phone" className="text-white" size={24} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Телефон</h3>
-                    <a href="tel:+79991234567" className="text-primary text-lg">+7 (999) 123-45-67</a>
+                    <a href="tel:+79991234567" className="text-xl hover:underline">+7 (999) 123-45-67</a>
+                    <p className="text-white/70 text-sm mt-1">Ежедневно с 8:00 до 22:00</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name="Mail" className="text-primary" size={24} />
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Mail" className="text-white" size={24} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Email</h3>
-                    <a href="mailto:info@ventpro.ru" className="text-primary">info@ventpro.ru</a>
+                    <a href="mailto:info@coolair.ru" className="hover:underline">info@coolair.ru</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name="MapPin" className="text-primary" size={24} />
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="MapPin" className="text-white" size={24} />
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-1">Адрес</h3>
-                    <p>г. Москва, ул. Примерная, д. 1</p>
+                    <p>г. Москва, ул. Центральная, д. 15</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name="Clock" className="text-primary" size={24} />
+                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Award" className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Режим работы</h3>
-                    <p>Пн-Пт: 9:00 - 18:00<br />Сб-Вс: по договоренности</p>
+                    <h3 className="font-bold text-lg mb-1">Гарантии</h3>
+                    <p>До 5 лет гарантии на оборудование</p>
+                    <p className="text-white/70 text-sm mt-1">Бесплатное обслуживание первый год</p>
                   </div>
                 </div>
               </div>
-              <Card>
+              <Card className="bg-white">
                 <CardHeader>
-                  <CardTitle>Оставьте заявку</CardTitle>
-                  <CardDescription>И мы свяжемся с вами в течение 15 минут</CardDescription>
+                  <CardTitle className="text-secondary">Оставьте заявку</CardTitle>
+                  <CardDescription>Мы перезвоним в течение 10 минут</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -461,12 +532,12 @@ const Index = () => {
                       required
                     />
                     <Textarea
-                      placeholder="Ваше сообщение"
+                      placeholder="Расскажите о вашем объекте"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       rows={4}
                     />
-                    <Button type="submit" className="w-full" size="lg">
+                    <Button type="submit" className="w-full bg-secondary hover:bg-secondary/90" size="lg">
                       Отправить заявку
                     </Button>
                   </form>
@@ -483,23 +554,23 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Icon name="Wind" className="text-primary" size={32} />
-                <span className="text-xl font-bold">VentPro</span>
+                <Icon name="AirVent" className="text-primary" size={32} />
+                <span className="text-xl font-bold">CoolAir Pro</span>
               </div>
-              <p className="text-white/70">Профессиональный монтаж систем вентиляции любой сложности</p>
+              <p className="text-white/70">Профессиональная установка канальных кондиционеров под ключ</p>
             </div>
             <div>
               <h3 className="font-bold mb-4">Услуги</h3>
               <ul className="space-y-2 text-white/70">
-                <li><a href="#services" className="hover:text-white transition-colors">Приточная вентиляция</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Вытяжная вентиляция</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Приточно-вытяжная</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Для квартир</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Для офисов</a></li>
+                <li><a href="#services" className="hover:text-white transition-colors">Для магазинов</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4">Компания</h3>
+              <h3 className="font-bold mb-4">Информация</h3>
               <ul className="space-y-2 text-white/70">
-                <li><a href="#portfolio" className="hover:text-white transition-colors">Портфолио</a></li>
+                <li><a href="#features" className="hover:text-white transition-colors">Преимущества</a></li>
                 <li><a href="#prices" className="hover:text-white transition-colors">Цены</a></li>
                 <li><a href="#reviews" className="hover:text-white transition-colors">Отзывы</a></li>
               </ul>
@@ -508,13 +579,13 @@ const Index = () => {
               <h3 className="font-bold mb-4">Контакты</h3>
               <ul className="space-y-2 text-white/70">
                 <li>+7 (999) 123-45-67</li>
-                <li>info@ventpro.ru</li>
-                <li>г. Москва, ул. Примерная, д. 1</li>
+                <li>info@coolair.ru</li>
+                <li>г. Москва, ул. Центральная, д. 15</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-white/70">
-            <p>&copy; 2024 VentPro. Все права защищены.</p>
+            <p>&copy; 2024 CoolAir Pro. Все права защищены.</p>
           </div>
         </div>
       </footer>
